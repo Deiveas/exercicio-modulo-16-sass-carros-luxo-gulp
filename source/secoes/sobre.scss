@@ -1,0 +1,12 @@
+@use '../config/variaveis';
+
+#sobre-das {
+    padding: 56px 0;
+    background-color: variaveis.$corSecundaria;
+
+    h2, p {
+        margin-bottom: 16px;
+        text-align: justify;
+        color: variaveis.$corPrincipal;
+    }
+}

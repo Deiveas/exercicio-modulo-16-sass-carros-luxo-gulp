@@ -1,0 +1,42 @@
+@use '../config/variaveis';
+
+#produtos {
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corTexto;
+    padding-top: 10px;
+
+    .products {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 32.66%);
+        column-gap: 1%;
+        row-gap: 4%;
+        width: 100%;
+
+        .product-item img {
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        .product-item {
+            margin-bottom: 50px;
+        }
+
+        .product-button {
+            display: block;
+            width: 100%;
+            background-color: variaveis.$corButton;
+            color: variaveis.$corTexto;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            margin-top: 8px;
+            text-decoration: none;
+            border: none;
+
+            &:hover {
+                background-color: lighten(variaveis.$corPrincipal, 40%);
+            }
+        }
+    }
+}

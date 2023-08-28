@@ -1,0 +1,39 @@
+@use '../config/variaveis';
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    #produtos .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #produtos .products {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .carros-luxo {
+        padding-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: variaveis.$mobile) {
+
+    #produtos .products {
+        display: block;
+    }
+
+    #produtos .product-item  {
+        margin-bottom: 32px;
+        grid-template-columns: 1fr;
+    }
+
+    .carros-luxo {
+        padding-bottom: 10px;
+    }
+}

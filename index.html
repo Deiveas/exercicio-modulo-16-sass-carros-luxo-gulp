@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS Carros de luxo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/main.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="branding">
+                <img class="img-fluid rounded" src="./build/images/agencia-logo.jpg" />
+                <h6>Data e hora de acesso:</h6>
+                <div id="data-hora"></div>
+            </div>
+            <div class="container">
+                <h1>DAS Carros de Luxo</h1>
+            </div>
+            <nav>
+                <ul class="navbar-brand menu">
+                    <li>
+                        <a href="#sobre-das">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Carros Esportivos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre-das">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="d-block w-100 img-fluid rounded" src="./build/images/sobre-das.jpg" alt="sobre-das">
+                </div>
+                <div class="mt-3 col-md-7">
+                    <h2>Sobre DAS Carros de Luxo</h2>
+                    <p>Pioneiros no mercado de carros premium e luxo esportivos em Mogi das Cruzes a região, a DAS
+                        Carros de
+                        Luxo nasce do sonho de Deive Silva em desenvolver uma loja de alto padrão de atendimento e
+                        exclusividade para quem, como ele desejava, quer adquirir o seu carro dos sonhos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="produtos">
+        <div class="container carros-luxo">
+            <h2>Carros Esportivos de Luxo</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-1.jpg" />
+                    <h4>Mercedes AMG GT-S <br> 2021</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-1">Ver
+                        Especifícações do carro</button>
+                </li>
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-2.jpg" />
+                    <h4>Ferrari SF90 Stradale <br> 2023</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-2">Ver
+                        Especifícações do carro</button>
+                </li>
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-3.jpg" />
+                    <h4>Lamborghini Aventador <br>LP700-4 2022</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-3">Ver
+                        Especifícações do carro</button>
+                </li>
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-4.jpg" />
+                    <h4>Corvette ZR1 Convertible <br>2019</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-4">Ver
+                        Especifícações do carro</button>
+                </li>
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-5.jpg" />
+                    <h4>Chevy Corvette Grand Sport <br> 2017</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-5">Ver
+                        Especifícações do carro</button>
+                </li>
+                <li class="product-item">
+                    <img class="mb-3" src="./build/images/carro-6.jpg" />
+                    <h4>Tesla Model X <br>2020</h4>
+                    <button class="product-button" type="submit" data-bs-toggle="modal" data-bs-target="#carro-6">Ver
+                        Especifícações do carro</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="modal" id="carro-1" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2 class="show">Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail w-100" src="./build/images/carro-1.jpg" alt="carro-1">
+                    <div class="card-body">
+                        <h4 class="card-title">Mercedes-Benz</h4>
+                        <h5 class="card-subtitle">AMG GT-S 2021</h5>
+                        <p class="card-text">O Mercedes-Benz AMG GT-S 2021 é uma combinação perfeita de desempenho e
+                            luxo. Com um motor potente, design elegante e tecnologias avançadas, ele oferece uma
+                            experiência de condução emocionante e sofisticada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="carro-2" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2>Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail" src="./build/images/carro-2.jpg" alt="carro-2">
+                    <div class="card-body">
+                        <h4>Ferrari</h4>
+                        <h5>SF90 Stradale 2023</h5>
+                        <p> Ferrari SF90 Stradale 2023 é um carro esportivo de última geração. Seu motor híbrido oferece
+                            uma potência impressionante, combinada com design aerodinâmico e tecnologias de ponta,
+                            proporcionando uma experiência de condução emocionante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" id="carro-3" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2>Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail" src="./build/images/carro-3.jpg" alt="carro-3">
+                    <div class="card-body">
+                        <h4>Lamborghini</h4>
+                        <h5>Aventador LP700-4 2022</h5>
+                        <p>O Lamborghini Aventador LP700-4 2022 é uma obra-prima de alta performance. Com seu motor
+                            poderoso e design arrojado, ele é um ícone dos carros esportivos de luxo, proporcionando uma
+                            experiência única nas estradas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" id="carro-4" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2>Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail" src="./build/images/carro-4.jpg" alt="carro-4">
+                    <div class="card-body">
+                        <h4>Corvette</h4>
+                        <h5>ZR1 Convertible 2019</h5>
+                        <p>O Corvette ZR1 Convertible 2019 é um carro que combina potência e estilo. Com um motor V8
+                            supercharged e um design icônico, ele proporciona uma experiência emocionante de direção ao
+                            ar livre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="carro-5" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2>Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail" src="./build/images/carro-5.jpg" alt="carro-5">
+                    <div class="card-body">
+                        <h4>Corvette</h4>
+                        <h5>Chevy Grand Sport 2017</h5>
+                        <p>O Chevy Corvette Grand Sport 2017 é um carro esportivo lendário. Combinando potência,
+                            agilidade e estilo clássico, ele oferece uma experiência de direção emocionante e elegante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="carro-6" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h2>Carro Esportivo de Luxo</h2>
+                        <button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <img class="img-fluid img-thumbnail" src="./build/images/carro-6.jpg" alt="carro-6">
+                    <div class="card-body">
+                        <h4>Tesla</h4>
+                        <h5>Model X 2020</h5>
+                        <p>O Tesla Model X 2020 redefine a condução elétrica. Com um design futurista, autonomia
+                            impressionante e recursos inovadores, ele oferece uma experiência de direção sustentável e
+                            avançada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center text-dark pt-2 pb-2 cor-rodape">
+            &copy; 2023 - DAS Carros de Luxo - Todos Direitos Reservados - Desenvolvido por Web
+            Master Deive Silva
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./build/script/newdate.js"></script>
+</body>
+
+</html>
