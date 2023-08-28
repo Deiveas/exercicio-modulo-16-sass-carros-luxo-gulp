@@ -1,5 +1,5 @@
 *.pdf
 *.pptx
 node_modules
-build
+
 
